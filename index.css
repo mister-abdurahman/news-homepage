@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 
 :root {
   --Soft-orange: hsl(35, 77%, 62%);
@@ -10,7 +10,7 @@
 }
 /* default styles */
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Epilogue", sans-serif;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -154,6 +154,8 @@ nav {
 }
 .top-blog {
   display: flex;
+  /* display: inline; */
+  flex-grow: 1;
   align-items: center;
   height: fit-content;
 }
@@ -182,6 +184,12 @@ nav {
   color: var(--Dark-grayish-blue);
 }
 
+.blog-info {
+  margin-top: 40px;
+  display: flex;
+  gap: 2rem;
+}
+
 @media screen and (max-width: 800px) {
   body {
     align-items: flex-start;
@@ -206,6 +214,7 @@ nav {
     flex-direction: column;
   }
   .blog-info {
+    display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 100%;
